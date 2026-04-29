@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associados NLR | Advocacia Empresarial e Imobiliária</title>
+    <meta name="description" content="Escritório de advocacia focado em soluções jurídicas premium nos ramos empresarial e imobiliário.">
+    
+    <!-- CSS e FontAwesome -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="site-header" id="header">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Associados NLR</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">O Escritório</a></li>
+                <li><a href="#areas">Áreas de Atuação</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#" class="nav-cta open-contact-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <!-- Hero Interno -->
+        <section class="page-hero">
+            <div class="hero-background" style="background-image: linear-gradient(rgba(15, 15, 20, 0.8), rgba(15, 15, 20, 0.95)), url('assets/images/empresarial.png');"></div>
+            <div class="hero-content">
+                <span class="hero-badge">Nossa Expertise</span>
+                <h1 class="hero-title">Direito Empresarial</h1>
+                <p class="hero-description" style="max-width: 600px; margin: 0 auto;">
+                    Soluções jurídicas estratégicas para corporações, protegendo seu patrimônio e viabilizando negócios de alta complexidade.
+                </p>
+            </div>
+        </section>
+
+        <!-- Conteúdo Detalhado -->
+        <section class="page-content">
+            <div class="page-content-wrapper">
+                <p>O <strong>Associados NLR</strong> oferece uma atuação artesanal no Direito Empresarial. Não buscamos o volume, mas sim a excelência em cada operação. Nossa equipe atua lado a lado com conselhos de administração e diretorias executivas para desenhar estruturas jurídicas robustas.</p>
+                
+                <p>Nossa abordagem foca na antecipação de cenários, mitigação de riscos e identificação de oportunidades de eficiência estrutural. Conheça nossas principais frentes de atuação:</p>
+
+                <ul class="service-list">
+                    <li>
+                        <h3>Fusões e Aquisições (M&A)</h3>
+                        <p>Assessoria completa em processos de compra, venda, fusão e incorporação de empresas. Atuamos desde a fase de *due diligence* até a negociação e elaboração dos contratos definitivos, garantindo segurança em operações multimilionárias.</p>
+                    </li>
+                    <li>
+                        <h3>Estruturação Societária</h3>
+                        <p>Desenho de estruturas societárias otimizadas, criação de holdings, acordos de acionistas e *joint ventures*, visando a proteção patrimonial e eficiência operacional.</p>
+                    </li>
+                    <li>
+                        <h3>Governança Corporativa e Compliance</h3>
+                        <p>Implementação de melhores práticas de governança, estruturação de conselhos de administração, comitês executivos e desenvolvimento de políticas de integridade corporativa.</p>
+                    </li>
+                    <li>
+                        <h3>Planejamento Sucessório</h3>
+                        <p>Elaboração de estratégias para a sucessão em empresas familiares, garantindo a perpetuidade do negócio, a proteção do patrimônio das gerações e a harmonia entre os sócios.</p>
+                    </li>
+                </ul>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <h3 style="margin-bottom: 1.5rem;">Precisando de assessoria especializada para o seu negócio?</h3>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="index.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Voltar para a Página Inicial</a>
+                        <a href="#" class="btn btn-primary open-contact-btn" id="openContactBtn2">Falar com Especialista</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Contato -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-box">
+            <div class="modal-close" id="closeContactBtn"><i class="fas fa-times"></i></div>
+            
+            <div class="modal-header">
+                <div class="modal-logo">Associados NLR</div>
+                <p>Preencha os dados abaixo para falar com nossos especialistas em direito empresarial e imobiliário.</p>
+            </div>
+
+            <form class="modal-form" id="contactForm" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato em breve.'); document.getElementById('contactModal').classList.remove('active');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome completo *</label>
+                        <input type="text" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail corporativo *</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Telefone / WhatsApp *</label>
+                        <input type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa (Opcional)</label>
+                        <input type="text" placeholder="Sua Empresa LTDA">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>O que você precisa? (Opcional)</label>
+                    <textarea placeholder="Descreva brevemente sua necessidade jurídica..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="modal-submit-btn">Enviar Solicitação <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Completo -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Associados NLR</div>
+                    <p class="footer-desc">
+                        Elevando os seus negócios através da excelência jurídica estratégica, sofisticação e precisão inigualável. Onde a expertise encontra resultados.
+                    </p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Brigadeiro Faria Lima, 3477 - Itaim Bibi, São Paulo - SP</p>
+                        <p><i class="fas fa-phone-alt"></i> (11) 99999-9999</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">O Escritório</a></li>
+                            <li><a href="#areas">Áreas de Atuação</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col footer-newsletter">
+                        <h4>Novidades</h4>
+                        <p>Receba os últimos insights jurídicos no seu e-mail.</p>
+                        <form action="#" class="newsletter-form">
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <button type="submit">Assinar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Associados NLR. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

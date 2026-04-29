@@ -37,4 +37,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Lógica do Modal de Contato
+    const modal = document.getElementById('contactModal');
+    const openContactBtns = document.querySelectorAll('.open-contact-btn');
+    const closeBtn = document.getElementById('closeContactBtn');
+
+    function openModal(e) {
+        if(e) e.preventDefault();
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Impede scroll do fundo
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    openContactBtns.forEach(btn => {
+        btn.addEventListener('click', openModal);
+    });
+    
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    // Fechar ao clicar fora do modal
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
 });

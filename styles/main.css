@@ -482,14 +482,138 @@ a:hover {
   line-height: 1.8;
 }
 
-.about-text strong {
-  color: var(--text-heading);
-  font-weight: 500;
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 /* ==========================================================================
-   Equipe
+   Page Hero (Subpáginas)
    ========================================================================== */
+.page-hero {
+  height: 50vh;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 80px;
+}
+
+.page-hero .hero-background {
+  height: 100%;
+}
+
+.page-hero .hero-content {
+  max-width: 800px;
+}
+
+.page-hero .hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Página Interna - Conteúdo
+   ========================================================================== */
+.page-content {
+  padding: 6rem 5%;
+  background-color: var(--bg-primary);
+}
+
+.page-content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-body);
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.service-list {
+  list-style: none;
+  margin: 3rem 0;
+}
+
+.service-list li {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.service-list li:hover {
+  transform: translateX(10px);
+}
+
+.service-list h3 {
+  font-size: 1.3rem;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.service-list p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  opacity: 0.7;
+}
+
+.article-content {
+  background-color: var(--bg-secondary);
+  padding: 4rem;
+  border-radius: 8px;
+}
+
+.article-content h2 {
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   Botões
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-heading);
+  border: 1px solid rgba(237, 224, 196, 0.3);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 .team-section {
   padding: 8rem 5%;
   background-color: var(--bg-secondary);
@@ -555,6 +679,273 @@ a:hover {
   font-size: 0.9rem;
   opacity: 0.7;
   line-height: 1.6;
+}
+
+/* ==========================================================================
+   Casos de Sucesso (Track Record)
+   ========================================================================== */
+.cases-section {
+  padding: 8rem 5%;
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(237, 224, 196, 0.05);
+}
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.case-card {
+  padding: 3rem 2rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(237, 224, 196, 0.05);
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(237, 224, 196, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.case-value {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.case-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-heading);
+}
+
+.case-card p {
+  color: var(--text-body);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Insights e Artigos
+   ========================================================================== */
+.insights-section {
+  padding: 8rem 5%;
+  background-color: var(--bg-secondary);
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+}
+
+.insight-card {
+  display: block;
+  padding: 2.5rem;
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.insight-card:hover {
+  border-left-color: var(--accent);
+  background-color: #121217;
+}
+
+.insight-meta {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.insight-card h3 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.insight-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-heading);
+  transition: color 0.3s ease;
+}
+
+.insight-card:hover .insight-link {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Modal de Contato Premium
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 20, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background-color: var(--bg-secondary);
+  color: var(--text-body);
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  padding: 3rem;
+  position: relative;
+  transform: translateY(30px);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.8);
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(237, 224, 196, 0.1);
+}
+
+.modal-overlay.active .modal-box {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-body);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modal-logo {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header p {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-heading);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(237, 224, 196, 0.2);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(240, 230, 211, 0.4);
+}
+
+.modal-submit-btn {
+  margin-top: 1rem;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-submit-btn:hover {
+  background-color: #f5e6c8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* ==========================================================================

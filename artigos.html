@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associados NLR | Advocacia Empresarial e Imobiliária</title>
+    <meta name="description" content="Escritório de advocacia focado em soluções jurídicas premium nos ramos empresarial e imobiliário.">
+    
+    <!-- CSS e FontAwesome -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="site-header" id="header">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Associados NLR</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">O Escritório</a></li>
+                <li><a href="#areas">Áreas de Atuação</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#" class="nav-cta open-contact-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <!-- Hero Interno -->
+        <section class="page-hero">
+            <div class="hero-background" style="background-image: linear-gradient(rgba(15, 15, 20, 0.9), rgba(15, 15, 20, 1)), url('assets/images/hero-bg.png');"></div>
+            <div class="hero-content">
+                <span class="hero-badge" style="color: var(--accent); margin-bottom: 1rem; display: inline-block;">12 Abril 2026 • Direito Empresarial</span>
+                <h1 class="hero-title" style="font-size: 2.5rem; max-width: 800px; margin: 0 auto 2rem auto;">Os novos paradigmas da Governança Corporativa e o impacto do ESG nos conselhos de administração</h1>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                    <img src="assets/images/lawyer1.png" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent);">
+                    <div style="text-align: left;">
+                        <strong>Dr. Roberto Almeida</strong><br>
+                        <span style="font-size: 0.8rem; opacity: 0.7;">Head de Direito Empresarial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo Detalhado -->
+        <section class="page-content">
+            <div class="page-content-wrapper">
+                <div class="article-content">
+                    <p>A governança corporativa, antes restrita ao cumprimento formal de diretrizes estatutárias e à proteção dos acionistas minoritários, vem passando por uma transformação sísmica impulsionada pela adoção transversal dos critérios <strong>ESG (Ambiental, Social e Governança)</strong>.</p>
+                    
+                    <p>No atual cenário corporativo, o conselho de administração não é apenas um órgão de supervisão financeira, mas o epicentro estratégico responsável por garantir a perenidade do negócio em um ambiente de escrutínio público e regulatório sem precedentes.</p>
+
+                    <h2>1. O novo dever fiduciário dos administradores</h2>
+                    <p>Tradicionalmente, a teoria da primazia do acionista (shareholder primacy) ditava que o dever primordial dos administradores era maximizar os lucros. Contudo, a nova interpretação do dever fiduciário — alinhada com a teoria dos *stakeholders* — exige que os conselheiros avaliem como as externalidades ambientais e as políticas de inclusão social impactam a reputação e o valor de mercado a longo prazo da companhia.</p>
+                    
+                    <p>Negligenciar riscos climáticos ou trabalhistas não é mais apenas um "problema de imagem", mas uma falha direta no dever de diligência (art. 153 da Lei das S.A.), sujeitando administradores a responsabilizações severas perante a CVM e acionistas (derivative suits).</p>
+
+                    <h2>2. Estruturação de Comitês de Sustentabilidade</h2>
+                    <p>Para mitigar esses riscos e manter a empresa competitiva no mercado global, observamos uma tendência vertiginosa de reestruturação nos organogramas do *board*. A implementação de Comitês de Sustentabilidade e ESG, com orçamento próprio e acesso direto ao conselho, deixou de ser um diferencial competitivo para se tornar uma exigência básica de fundos institucionais na alocação de capital.</p>
+
+                    <h2>3. A ascensão do "Greenwashing" e o Risco de Litígio</h2>
+                    <p>Outro ponto crítico é a comunicação com o mercado. A proliferação do *greenwashing* (divulgação enganosa de práticas sustentáveis) tem gerado uma nova onda de litígios. Os conselhos devem garantir que qualquer declaração ESG da companhia possa ser matematicamente e juridicamente comprovada mediante auditorias independentes.</p>
+
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(237, 224, 196, 0.1);">
+                        <p style="font-style: italic; opacity: 0.6; font-size: 0.9rem;">
+                            Este artigo tem caráter meramente informativo e não substitui aconselhamento jurídico específico. Caso sua empresa necessite estruturar políticas de governança, o Associados NLR está à disposição.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem; display: flex; justify-content: center; gap: 1rem;">
+                    <a href="index.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Voltar para a Página Inicial</a>
+                    <a href="insights.html" class="btn btn-primary">Ler outros artigos <i class="fas fa-book-open"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Contato -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-box">
+            <div class="modal-close" id="closeContactBtn"><i class="fas fa-times"></i></div>
+            
+            <div class="modal-header">
+                <div class="modal-logo">Associados NLR</div>
+                <p>Preencha os dados abaixo para falar com nossos especialistas em direito empresarial e imobiliário.</p>
+            </div>
+
+            <form class="modal-form" id="contactForm" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato em breve.'); document.getElementById('contactModal').classList.remove('active');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome completo *</label>
+                        <input type="text" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail corporativo *</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Telefone / WhatsApp *</label>
+                        <input type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa (Opcional)</label>
+                        <input type="text" placeholder="Sua Empresa LTDA">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>O que você precisa? (Opcional)</label>
+                    <textarea placeholder="Descreva brevemente sua necessidade jurídica..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="modal-submit-btn">Enviar Solicitação <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Completo -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Associados NLR</div>
+                    <p class="footer-desc">
+                        Elevando os seus negócios através da excelência jurídica estratégica, sofisticação e precisão inigualável. Onde a expertise encontra resultados.
+                    </p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Brigadeiro Faria Lima, 3477 - Itaim Bibi, São Paulo - SP</p>
+                        <p><i class="fas fa-phone-alt"></i> (11) 99999-9999</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">O Escritório</a></li>
+                            <li><a href="#areas">Áreas de Atuação</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col footer-newsletter">
+                        <h4>Novidades</h4>
+                        <p>Receba os últimos insights jurídicos no seu e-mail.</p>
+                        <form action="#" class="newsletter-form">
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <button type="submit">Assinar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Associados NLR. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

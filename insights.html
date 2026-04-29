@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associados NLR | Advocacia Empresarial e Imobiliária</title>
+    <meta name="description" content="Escritório de advocacia focado em soluções jurídicas premium nos ramos empresarial e imobiliário.">
+    
+    <!-- CSS e FontAwesome -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="site-header" id="header">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">Associados NLR</a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">O Escritório</a></li>
+                <li><a href="#areas">Áreas de Atuação</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#" class="nav-cta open-contact-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <!-- Hero Interno -->
+        <section class="page-hero">
+            <div class="hero-background" style="background-image: linear-gradient(rgba(15, 15, 20, 0.9), rgba(15, 15, 20, 1)), url('assets/images/hero-bg.png');"></div>
+            <div class="hero-content">
+                <span class="hero-badge">Notícias e Artigos</span>
+                <h1 class="hero-title">Insights NLR</h1>
+                <p class="hero-description" style="max-width: 600px; margin: 0 auto;">
+                    Acompanhe nossas análises exclusivas sobre as mais recentes movimentações do mercado e do cenário jurídico brasileiro.
+                </p>
+            </div>
+        </section>
+
+        <!-- Listagem de Artigos -->
+        <section class="page-content" style="padding-top: 4rem;">
+            <div class="page-content-wrapper" style="max-width: 1100px;">
+                <div class="insights-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">12 Abril 2026 • Direito Empresarial</div>
+                        <h3>Os novos paradigmas da Governança Corporativa e o impacto do ESG nos conselhos de administração</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">28 Março 2026 • Direito Imobiliário</div>
+                        <h3>Tokenização de Ativos Imobiliários: Segurança jurídica e novas fronteiras para investidores institucionais</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">15 Fevereiro 2026 • Fusões e Aquisições</div>
+                        <h3>Cláusulas MAC em Operações de M&A: Reflexões práticas e estratégias de mitigação de risco pós-fechamento</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">02 Janeiro 2026 • Sucessão Patrimonial</div>
+                        <h3>A constituição de holdings familiares como escudo protetivo contra litígios sucessórios de alta complexidade</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">18 Novembro 2025 • Agronegócio</div>
+                        <h3>FIAGRO: A revolução silenciosa no financiamento do agronegócio e a estruturação de garantias atípicas</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="artigos.html" class="insight-card">
+                        <div class="insight-meta">05 Outubro 2025 • Compliance</div>
+                        <h3>A responsabilidade pessoal dos administradores e diretores estatutários frente a incidentes cibernéticos</h3>
+                        <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Contato -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-box">
+            <div class="modal-close" id="closeContactBtn"><i class="fas fa-times"></i></div>
+            
+            <div class="modal-header">
+                <div class="modal-logo">Associados NLR</div>
+                <p>Preencha os dados abaixo para falar com nossos especialistas em direito empresarial e imobiliário.</p>
+            </div>
+
+            <form class="modal-form" id="contactForm" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe entrará em contato em breve.'); document.getElementById('contactModal').classList.remove('active');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome completo *</label>
+                        <input type="text" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail corporativo *</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Telefone / WhatsApp *</label>
+                        <input type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa (Opcional)</label>
+                        <input type="text" placeholder="Sua Empresa LTDA">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>O que você precisa? (Opcional)</label>
+                    <textarea placeholder="Descreva brevemente sua necessidade jurídica..." rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="modal-submit-btn">Enviar Solicitação <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Completo -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">Associados NLR</div>
+                    <p class="footer-desc">
+                        Elevando os seus negócios através da excelência jurídica estratégica, sofisticação e precisão inigualável. Onde a expertise encontra resultados.
+                    </p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Brigadeiro Faria Lima, 3477 - Itaim Bibi, São Paulo - SP</p>
+                        <p><i class="fas fa-phone-alt"></i> (11) 99999-9999</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">O Escritório</a></li>
+                            <li><a href="#areas">Áreas de Atuação</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col footer-newsletter">
+                        <h4>Novidades</h4>
+                        <p>Receba os últimos insights jurídicos no seu e-mail.</p>
+                        <form action="#" class="newsletter-form">
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <button type="submit">Assinar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Associados NLR. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
