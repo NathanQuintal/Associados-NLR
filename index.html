@@ -39,7 +39,7 @@
                 </p>
                 <div class="hero-actions">
                     <a href="#" class="btn btn-primary open-contact-btn">Agendar Consulta</a>
-                    <a href="#areas" class="btn btn-secondary">Nossa Expertise</a>
+                    <a href="#areas" class="btn btn-primary">Nossa Expertise</a>
                 </div>
             </div>
 
@@ -51,9 +51,10 @@
         </section>
         
         <!-- Áreas de Atuação -->
-        <section class="areas-section" id="areas">
-            <div class="container">
-                <div class="section-header">
+        <section class="areas-section grid-bg" id="areas">
+            <div class="glow-orb orb-1"></div>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="section-header reveal">
                     <span class="section-badge">Nossa Expertise</span>
                     <h2 class="section-title">Áreas de Atuação</h2>
                     <div class="section-line"></div>
@@ -61,7 +62,7 @@
 
                 <div class="areas-grid">
                     <!-- Card Direito Empresarial -->
-                    <div class="area-card">
+                    <div class="area-card reveal">
                         <div class="area-image">
                             <img src="assets/images/empresarial.png" alt="Direito Empresarial">
                             <div class="area-overlay"></div>
@@ -75,7 +76,7 @@
                     </div>
 
                     <!-- Card Direito Imobiliário -->
-                    <div class="area-card">
+                    <div class="area-card reveal">
                         <div class="area-image">
                             <img src="assets/images/imobiliario.png" alt="Direito Imobiliário">
                             <div class="area-overlay"></div>
@@ -92,12 +93,14 @@
         </section>
 
         <!-- O Escritório -->
-        <section class="about-section" id="sobre">
-            <div class="container about-container">
-                <div class="about-image">
+        <section class="about-section" id="sobre" style="position: relative; overflow: hidden;">
+            <div class="watermark-text">NLR</div>
+            <div class="glow-orb orb-2"></div>
+            <div class="container about-container" style="position: relative; z-index: 1;">
+                <div class="about-image reveal">
                     <img src="assets/images/office.png" alt="O Escritório Associados NLR">
                 </div>
-                <div class="about-text">
+                <div class="about-text reveal">
                     <span class="section-badge">Nossa História</span>
                     <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">O Escritório</h2>
                     <div class="section-line" style="margin: 0 0 2rem 0;"></div>
@@ -117,7 +120,7 @@
         <!-- Equipe -->
         <section class="team-section" id="equipe">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <span class="section-badge">Especialistas</span>
                     <h2 class="section-title">Nossa Equipe</h2>
                     <div class="section-line"></div>
@@ -125,7 +128,7 @@
 
                 <div class="team-grid">
                     <!-- Advogado 1: Empresarial -->
-                    <div class="team-card">
+                    <div class="team-card reveal">
                         <div class="team-image">
                             <img src="assets/images/lawyer1.png" alt="Dr. Roberto Almeida">
                         </div>
@@ -137,7 +140,7 @@
                     </div>
 
                     <!-- Advogada 2: Imobiliário -->
-                    <div class="team-card">
+                    <div class="team-card reveal">
                         <div class="team-image">
                             <img src="assets/images/lawyer2.jpg" alt="Dra. Marina Silveira">
                         </div>
@@ -154,23 +157,23 @@
         <!-- Casos de Sucesso -->
         <section class="cases-section" id="casos">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <span class="section-badge">Track Record</span>
                     <h2 class="section-title">Casos Recentes</h2>
                     <div class="section-line"></div>
                 </div>
                 <div class="cases-grid">
-                    <div class="case-card">
+                    <div class="case-card reveal">
                         <div class="case-value">R$ 500M+</div>
                         <h4>Fusão e Aquisição - Setor de Varejo</h4>
                         <p>Assessoria completa na estruturação societária e *due diligence* para aquisição de rede varejista nacional por fundo internacional.</p>
                     </div>
-                    <div class="case-card">
+                    <div class="case-card reveal">
                         <div class="case-value">R$ 1.2B</div>
                         <h4>Fundo de Investimento Imobiliário</h4>
                         <p>Modelagem jurídica e estruturação regulatória para o lançamento de FII focado em galpões logísticos de alto padrão.</p>
                     </div>
-                    <div class="case-card">
+                    <div class="case-card reveal">
                         <div class="case-value">Exclusivo</div>
                         <h4>Planejamento Sucessório</h4>
                         <p>Reestruturação patrimonial e governança corporativa para uma das maiores famílias empresariais do agronegócio brasileiro.</p>
@@ -182,7 +185,7 @@
         <!-- Insights -->
         <section class="insights-section" id="insights">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal">
                     <span class="section-badge">Conhecimento</span>
                     <h2 class="section-title">Insights e Artigos</h2>
                     <div class="section-line"></div>
@@ -191,12 +194,12 @@
                     <a href="insights.html" style="color: var(--accent); font-weight: 500;">Ver todos os artigos <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="insights-grid">
-                    <a href="artigos.html" class="insight-card">
+                    <a href="artigos.html" class="insight-card reveal">
                         <div class="insight-meta">12 Abril 2026 • Direito Empresarial</div>
                         <h3>Os novos paradigmas da Governança Corporativa e o impacto do ESG nos conselhos de administração</h3>
                         <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>
                     </a>
-                    <a href="artigos.html" class="insight-card">
+                    <a href="artigos.html" class="insight-card reveal">
                         <div class="insight-meta">28 Março 2026 • Direito Imobiliário</div>
                         <h3>Tokenização de Ativos Imobiliários: Segurança jurídica e novas fronteiras para investidores institucionais</h3>
                         <span class="insight-link">Ler Artigo <i class="fas fa-arrow-right"></i></span>

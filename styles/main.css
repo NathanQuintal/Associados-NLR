@@ -7,6 +7,7 @@
   --text-heading: #F5E6C8;
   --text-body: #F0E6D3;
   --accent: #EDE0C4;
+  --accent-gradient: linear-gradient(135deg, #F5E6C8, #D4AF37, #F5E6C8);
   
   /* Fontes */
   --font-heading: 'Playfair Display', serif;
@@ -21,7 +22,7 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  background: radial-gradient(circle at top right, #16161C 0%, #0F0F14 100%);
   color: var(--text-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -140,6 +141,7 @@ a:hover {
   background-image: url('../assets/images/hero-bg.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -223,16 +225,18 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--accent);
+  background: var(--accent-gradient);
   color: var(--bg-primary);
-  border: 1px solid var(--accent);
-  font-weight: 500;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--accent);
-  box-shadow: 0 0 20px rgba(237, 224, 196, 0.2);
+  background: var(--accent-gradient);
+  color: var(--bg-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 .btn-secondary {
@@ -293,6 +297,74 @@ a:hover {
 }
 
 /* ==========================================================================
+   Animações de Scroll (Reveal)
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Background Enrichments (Design Premium)
+   ========================================================================== */
+
+.glow-orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-1 {
+  top: -100px;
+  right: -200px;
+}
+
+.orb-2 {
+  bottom: -200px;
+  left: -200px;
+}
+
+.watermark-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-heading);
+  font-size: 35vw;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(237, 224, 196, 0.04);
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.grid-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(237, 224, 196, 0.02) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(237, 224, 196, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
    Áreas de Atuação
    ========================================================================== */
 .areas-section {
@@ -349,8 +421,8 @@ a:hover {
 
 .area-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(237, 224, 196, 0.3);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgba(237, 224, 196, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
 }
 
 .area-image {
@@ -594,14 +666,18 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--accent);
+  background: var(--accent-gradient);
   color: var(--bg-primary);
-  border: 1px solid var(--accent);
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--accent);
+  background: var(--accent-gradient);
+  color: var(--bg-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 .btn-secondary {
@@ -925,13 +1001,13 @@ a:hover {
 
 .modal-submit-btn {
   margin-top: 1rem;
-  background-color: var(--accent);
+  background: var(--accent-gradient);
   color: var(--bg-primary);
   border: none;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -940,12 +1016,12 @@ a:hover {
   gap: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
 }
 
 .modal-submit-btn:hover {
-  background-color: #f5e6c8;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
 /* ==========================================================================
